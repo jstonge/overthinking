@@ -186,4 +186,29 @@ mermaid`
 graph LR
 
 `
-```  
+``` 
+
+---
+
+## Got milk? multicollinearity example (rethinking p.173)
+
+```js
+mermaid`
+graph LR
+  L((Lactose))
+  F[[Fat]]
+  K
+  L --> K
+  D --> L
+  D --> F
+  F --> K
+  style D fill:#fff, color:#AA4A44, stroke:#AA4A44, stroke-dasharray: 5 5
+  linkStyle 1 stroke:#AA4A44
+  linkStyle 0 stroke:#AA4A44
+  linkStyle 3 stroke:#AA4A44
+  linkStyle 2 stroke:#AA4A44
+  style L fill:#fff, stroke-width:0px
+  style K fill:#fff, stroke-width:0px
+  style F fill:#fff, stroke-width:0px
+`
+``` 
